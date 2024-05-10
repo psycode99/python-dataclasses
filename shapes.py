@@ -10,5 +10,5 @@ class Rectangle:
 class Square(Rectangle):
     side: float
 
-    def post_init_(self):
+    def __post_init__(self):
         super().__init__(self.side, self.side)
